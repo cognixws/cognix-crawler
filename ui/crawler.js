@@ -1,4 +1,4 @@
-/* Crawler 0.1.3 — github.com/cognixws/picode-crawler (Apache-2.0). Built from lib/; do not edit. */
+/* Crawler 0.1.3 — github.com/cognixws/cognix-crawler (Apache-2.0). Built from lib/; do not edit. */
 (function () {
 "use strict";
 // The crawler's engine, with no DOM: a tree of boxes, a hierarchical search
