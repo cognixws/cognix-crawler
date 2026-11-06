@@ -15,7 +15,7 @@ export function bundle() {
   const core = strip(readFileSync(join(root, "lib/core.mjs"), "utf8"));
   const dom = strip(readFileSync(join(root, "lib/dom.mjs"), "utf8"));
   const { version } = JSON.parse(readFileSync(join(root, "picode-extension.json"), "utf8"));
-  return `/* Crawler ${version} — github.com/cognixws/picode-crawler (Apache-2.0). Built from lib/; do not edit. */\n` +
+  return `/* Crawler ${version} — github.com/cognixws/cognix-crawler (Apache-2.0). Built from lib/; do not edit. */\n` +
     `(function () {\n"use strict";\n${core}\n${dom}\n` +
     `window.Crawler = Object.freeze({ version: ${JSON.stringify(version)}, start, watchAgent });\nautostart();\n})();\n`;
 }
